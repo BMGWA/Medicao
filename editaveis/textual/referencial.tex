@@ -47,7 +47,7 @@ Técnico existente em um projeto.
 
 
 \subsection{Método SQALE para avaliação de Débito Técnico}
-Letouzey [5] propõe a utilização do método SQALE (Software Quality Assessment
+\cite{letouzey} propõe a utilização do método SQALE (Software Quality Assessment
 based on Lifecycle Expectations) para análise do débito técnico. O método de
 Letouzey propõe um Modelo de Qualidade (SQALE Quality Model) e um Modelo de
 Análise (SQALE Analysis Model) para verificação das violações de código.
@@ -59,10 +59,75 @@ requisitos caracteriza débito técnico. Por isso, os Requisitos devem ser atôm
 não-ambíguos, não-redundantes, justificáveis, aceitáveis, implementáveis e
 verificáveis.
 
-Assim, basta utilizar uma ferramenta que consiga avaliar o código com relação aos Requisitos estabelecidos e será possível identificar o débito técnico na aplicação.
-O Modelo de Análise faz uso de um índice de remediação para avaliar os impactos das violações identificadas. Esse índice de remediação faz uma relação entre os Requisitos do Modelo de Qualidade, com uma remediação associada a cada violação desses requisitos. Por fim, é estipulado também uma função de remediação, que associa um tempo para aplicar aquela remediação.
+Assim, basta utilizar uma ferramenta que consiga avaliar o código com relação
+aos Requisitos estabelecidos e será possível identificar o débito técnico na
+aplicação.
+
+O Modelo de Análise faz uso de um índice de remediação para avaliar os
+impactos das violações identificadas. Esse índice de remediação faz uma relação
+entre os Requisitos do Modelo de Qualidade, com uma remediação associada a
+cada violação desses requisitos. Por fim, é estipulado também uma função de
+remediação, que associa um tempo para aplicar aquela remediação.
 
 \subsection{Identificação de Débito Técnico}
+Para mensurar o Débito Técnico existente em uma aplicação é necessário que haja
+meios de identificá-lo. Existem vários métodos de identificação de Débito Técnico,
+sendo um deles o proposto por \cite{siebra}, afirmando que os resultados obtidos a
+partir da medição de um conjunto de dez métricas podem identificar o quanto de
+Débito Técnico uma aplicação possui. Essas métricas podem ser:
+
+\begin{enumerate}
+  \item Acoplamentos Aferentes;
+  \item Acoplamentos Eferentes;
+  \item Árvore de Profundidade de Herança;
+  \item Falta de Coesão em Métodos;
+  \item Número de filhos;
+  \item Complexidade Cliclomática;
+  \item Duplicação de Código;
+  \item Documentação do Código;
+  \item Métodos por classe;
+  \item Acoplamento entre métodos.
+\end{enumerate}
+
 \subsection{Medição de Débito Técnico}
+\cite{principal} propõem uma fórmula para identificação do principal de um
+débito técnico, com parâmetros ajustáveis de acordo com os interesses da
+organização. A formula é:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=250px, scale=1]{figuras/formulaprincipal}
+  \caption{Cálculo do TD principal}
+\end{figure}
+Onde:
+
+Débito Técnico-Principal: É o valor atual de Débito Técnico no software;
+
+X-Severity-Violations: O somatório total de números de ocorrências de violações
+de uma severidade X;
+
+Percentage to be fixed: O percentual que a organização estipulou que irá corrigir
+de violações daquele nível de severidade;
+
+Average hours needed to fix: Média do tempo necessário para corrigir uma violação
+daquele nível de severidade;
+
+\$ per hour: Custo/hora de quem irá corrigir as violações.
+
+Segundo os autores, com a fórmula é possível obter o custo para corrigir o débito
+técnico de um software, de acordo com os parâmetros da organização.
 
 \section{Contratação na Administração Pública Federal Brasileira}
+
+No Decreto-Lei nº 200, \cite{decreto200} por institui princípios fundamentais para a
+Administração Pública, sendo um deles a contratação de terceiros, que deve ser
+executada sempre que houver possibilidade.
+
+O decreto nº 2.271, por \cite{decreto2271}, aconselha que todos os produtos e seviços
+que não tenham ligação direta para a utilização na organização, incluindo serviços
+de informática, sejam terceirizados. A fim de destituir a responsabilidade do
+órgão para com o desenvolvimento de vários serviços, privando-o unicamente com
+a administração destes.
+
+\section{Medição e Análise}
+\subsection{GQM}
