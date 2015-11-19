@@ -53,19 +53,182 @@ responsabilidades, como podemos ver a seguir:
   com o projeto.
 
   \item Coleta de Dados, papel de implantar as medições do plano nos sistemas e
-  progetos
+  projetos aplicando as métricas, seja de forma manual ou automatizada com alguma
+  ferramenta.
 \end{itemize}
 
 \subsection{Selecionar Área de Melhoria}
-\subsection{Selecionar Projetos de Aplicação}
 \subsection{Criar Plano de Projeto de Medição}
+
+\begin{itemize}
+\item Organizacao: \cite{td} propoem um processo de analise do impacto de debito tecnico,
+bem como seu custo, baseado na necessidade do mercado e em processos ja utilizados academicamente.
+\end{itemize}
+
 \subsection{Treinar e Promover}
+\begin{itemize}
+\item Objetivos de melhoria: Agilizar a medição de débito técnico no desenvolvimento de software de forma
+automatizada, baseado no trabalho de \cite{td}, sem perder a precisão das medições geradas manualmente.
+
+\item Benefícios esperados: \cite{td} Redução do tempo para medir fatores de débito técnico, bem como a
+redução de custo.
+
+\item Impacto da medição \cite{td} Dizer mais precisamente e mais rapidamente sobre os impactos dos débitos
+técnicos medidos em determinado projeto, fazendo com que o tempo seja reduzido e a visão do débito técnico, sendo
+crítico ou não e seus custos, seja analisada com um ritmo equilibrado ao desenvolvimento de software, para que não acarrete
+custos ainda maiores nas análises e no desenvolvimento.
+
+\end{itemize}
+\subsection{Selecionar Projetos de Aplicação}
+Para a aplicacao, os softwares SisCot, sistema de cotações para compra de fornecedores e Aondê, software
+de acompanhamento dos gastos do governo brasileiro estao selecionados para que ocorra a medição
+de debito tecnico automatizado baseados no processo de \cite{td}.
+
 
 \section{Definição do GQM}
+Este tópico traz as características definidas do nosso plano de medição, bem como
+os objetivos desta, as questões aliadas aos objetivos e as suas respectivas métricas.
 \subsection{Objetivos de Medição}
-\subsection{Produzir Modelos de Processo}
+O objetivo de medição deste plano tem como fim possibilitar a quantificação de
+dívida técnica em um projeto de desenvolvimento de software. O objetivo é o
+seguinte:
+
+\begin{itemize}
+  \item Conhecer o quanto de Dívida Técnica uma aplicação advinda de Terceiro
+  possui no momento da entrega.
+\end{itemize}
+
+Para elevar o nível de detalhamento exigido para um objetivo de medição, foi
+utilizado um template onde são destacados pontos sobre o objetivo, dentre eles:
+
+\begin{itemize}
+  \item Objetivo a ser analisado;
+  \item Propósito;
+  \item A quem diz respeito;
+  \item Sob o ponto de vista de alguma determinada pessoa ou instituição;
+  \item No contexto de algum ambiente em que a medição estará inserida
+\end{itemize}
+
+Dessa forma, o template utilizado para ilustrar o objetivo de medição pode ser
+visualizado na tabela \ref{table:templateobjetivo} a seguir.
+\\
+
+\begin{table}[ht]
+\caption{Divisão dos Papeis na Equipe GQM}
+\centering
+\begin{tabular}{|l|p{7cm}|}
+\hline
+Analisar & Conhecer o quanto de Dívida Técnica uma aplicação advinda de Terceiro
+possui no momento da entrega \\
+\hline
+Com o propósito de & Automatizar e padronizar o processo de medição de Dívida
+Técnica de um Software adquirido de terceiro \\
+\hline
+Com respeito a & Qualidade no Momento da Medição \\
+\hline
+Sob o ponto de vista de & Institução que compra um software de um terceiro  \\
+\hline
+No contexto de & Projetos de Desenvolvimento de Software adquiridos de terceiros \\
+\hline
+\end{tabular}
+\label{table:templateobjetivo}
+\end{table}
+
 \subsection{Conduzir Entrevistas GQM}
+Para alinhar o plano de medição, foi construída uma Abstraction Sheets em conjunto
+com a equipe de medição e os cliente do projeto, que são os autores de \cite{td}.
+A  Abstraction Sheets leva em consideração alguns critérios que foram analisados:
+
+\begin{itemize}
+  \item Foco na Qualidade;
+  \item Fatores de Variação;
+  \item Hipóteses de Baseline;
+  \item Impactos nas Hipóteses de Baseline.
+\end{itemize}
+
+Em conjunto com a equipe de projeto, foi desenvolvida a seguinte tabela
+\ref{table:abstraction}, ressaltando
+os itens acima.
+\\
+
+\begin{table}[ht]
+\caption{Abstraction Sheets}
+\centering
+\begin{tabular}{p{5cm}|p{5cm}}
+  \textbf{Foco de Qualidade}   & \textbf{Fatores de Variação}  \\
+  Acoplamentos Aferentes, Acoplamentos Eferentes,
+  Árvore de Profundidade de Herança, Falta de Coesão em Métodos, Número de filhos,
+  Complexidade Ciclomática, Duplicação de Código, Documentação do Código,
+  Métodos por classe
+  &
+  Baixa atenção dos programadores,
+  ambiente não propício para desenvolvimento, pressão da alta gerência para
+  a entrega da funcionalidade, optar pela falta de qualidade
+  \\
+\hline
+\textbf{Hipóteses de Baseline} & \textbf{Impactos nas hipóteses de Baseline} \\
+
+Valores baixos para acomplamento e valores altos para coesão. Baixas medidas com
+Complexidade Ciclomática e Duplicação de código
+&
+Com o time de desenvolvimento sendo pressionado pela alta direção, é natural
+que a qualidade do código seja deixada de lado para entregar a funcionalidade
+no prazo adequado
+\\
+
+\end{tabular}
+\label{table:abstraction}
+\end{table}
+
 \subsection{Definir Questões}
+Alidas ao obejetivo de medição, tem-se questões de medição que quando respondidas
+possibilitam o êxito de um objetivo. O estudo feito por \cite{oliveira}, mostra que
+um conjunto determinado de tipo de métricas está diretamente aliado à quantidade
+de Dívida Técnica de um projeto de software. Este estudo cita o seguinte conjunto de
+características de métricas:
+
+\begin{enumerate}
+  \item Métricas de Acoplamento;
+  \item Métricas Relativas à Orientação a Objetos;
+  \item Métricas de Estilização de Código.
+\end{enumerate}
+
+
+Com base no trabalho de \cite{siebra} foram elaboradas as questões de medição
+para este projeto a fim de responder o objetivo citado anteriormente.
+
+\begin{itemize}
+  \item Qual o nível de acoplamento de um módulo de software?
+  \item O quão coeso está o código de um projeto?
+  \item Qual a duplicidade de código?
+  \item Quanto um código está documentado?
+\end{itemize}
 \subsection{Definir Métricas}
+A fim de responder cada questão de pesquisa, são utilizadas métricas, que neste
+estudo de caso foram baseadas em \cite{siebra}. Assim, as seguintes métricas
+foram escolhidas:
+
+\begin{itemize}
+  \item Acoplamento Aferente
+  \item Acoplamento Eferente
+  \item Árvore de Profundidade de Herança
+  \item Média da Falta de Coesão em Métodos
+  \item Duplicação de Código
+  \item Documentação do Código
+  \item Métodos por classe
+  \item Acoplamento entre métodos
+\end{itemize}
+
+A rastreabilidade da hierarquia do GQM com o relação de dependência entre as questões
+e métricas pode ser observada na figura \ref{fig:arvore} a seguir.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=400px, scale=1]{figuras/arvore}
+  \caption{Relação entre oo objetivo de Medição, questões e métricas}
+  \label{fig:arvore}
+\end{figure}
+
 \subsection{Verificar Métricas}
+
 \subsection{Produzir Planos}
