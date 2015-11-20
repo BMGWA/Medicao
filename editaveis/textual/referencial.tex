@@ -134,4 +134,134 @@ de informática, sejam terceirizados. A fim de destituir a responsabilidade do
 a administração destes.
 
 \section{Medição e Análise}
-\subsection{GQM}
+Em geral, medição é o processo no qual números ou símbolos são atribuídos a
+atributos ou entidades do mundo real de forma a descrevê-los de acordo com regras
+bem definidas \cite{fentonpfleeger}. O resultado númerico é chamado 'medição'.
+Isto pode ser aplicado ao desenvolvimento de software e ao produto de software.
+
+Medição de software é um processo contínuo de definição, coleta e análise de
+dados em cima do desenvolvimento de software e seus produtos com o objetivo de
+entender e controlar o processo \cite{egon}.
+
+
+Em seu livro Software Metrics - A Rigorous and Practical Approach, Fenton define
+medição como o processo de atribuição de números ou símbolos que são atribuídos
+a atributos de entidades do mundo real, para descrever elas de acordo com regras
+definidas. Ele ainda nos diz que uma entidade pode ser tanto um objeto, quanto
+um evento do mundo real, e um atributo é uma característica ou propriedade dessa
+entidade que nos interessa.
+
+Ele ainda define que existe dois tipos de quantificação: Medição e Calculação.
+A medição é direta, como medir o peso de alguém. Já a calculação é indireta, onde
+são realizada medições e a combinação delas refletem o atributo que estamos
+tentando entender.
+
+A medição se faz necessária em um projeto de software pois ela nos auxilia a
+entender o que está acontecendo, o que nos permite um controle maior sobre o
+projeto o que serve de base para melhorar o mesmo.
+
+\subsection{Objetivos da medição de software}
+Medição é uma ferramenta poderosa para entender os efeitos das ações que são
+tomadas para melhorar o processo de desenvolvimento de software
+\cite{egon}.
+
+Dados de medição de software são interpretados para prover informações que podem
+ser aplicadas para três diferentes propósitos. Em primeiro lugar, os dados
+fornecem visibilidade do processo de desenvolvimento atual e as características
+dos produtos de software. Essa visibilidade é requerida para reduzir a complexidade
+e aumentar o entendimento do processo e dos produtos. Entedimento significa
+determinar as diferentes variáveis que existem durante a execução de um processo.
+Uma vez que um entedimento básico é estabelecido, os dados coletados e analisados
+podem ser usados para controlar o processo e os produtos. Isso significa que as
+relações entre os variáveis de processos têm de ser determinadas. Uma vez que
+ essas relações são conhecidas, elas podem ser usadas parar controlar o processo.
+ Além disso, baseados em análise, os dados de medição coletados podem ser usados
+ para avaliar o processo e, então, agir como indicadores das áreas problemáticas
+ do processo de desenvolvimento, do qual ações de melhoria podem ser tomadas
+ \cite{pfleeger}.
+
+\subsection{Conceitos de medição de software orientada a meta}
+Medição de software só deve ser realizada diante de propósitos bem definidos.
+A medição de software orientada a meta é especialmente usada para programas de
+ melhoria. O método aplicado nesse trabalho é o método GQM (Goal, Question, Metric)
+ concebido por \cite{basiliRombach}.
+
+ O método GQM contém quatro fases:
+\begin{enumerate}
+  \item   \textbf{Fase de planejamento}, onde a escolha do projeto para a aplicação de
+  medição é selecionado, definido, caracterizado e planejado;
+  \item  \textbf{Fase de definição}, onde o programa de medição é definido (metas, questões,
+  métricas e hipóteses são definidas) e documentado;
+  \item  \textbf{Fase de coleta de dados}, onde a a coleta de dados realmente acontece;
+  \item  \textbf{Fase de interpretação}, onde os dados coletados são processados de
+  acordo com as métricas definidas nos resultados de medição, que provêm
+  respostas para as questões definidas.
+\end{enumerate}
+
+A fase de planejamento é executada para obter os requisitos básicos para a
+construção de um bom GQM, incluindo treinamento, envolvimento de gerência e
+planejamento de projeto. Durante a fase de definição, todos os entregáveis do
+GQM são desenvolvidos, baseados, principalmente, em entrevistas estruturadas.
+Na fase definição, também são identificados os objetivos, todas as questões,
+métricas relacionadas e hipóteses das medições. Durante a fase de coleta de
+dados, as formas de coletar dados são definidas e preenchidas em um banco de
+dados de medição. Então, o trabalho, de
+fato, pode começar: usando os dados de medição. Durante a fase de interpretação,
+as medições são usadas para responder as questões propostas e essas respostas são,
+novamente, para verificar se as metas propostas foram atingidas \cite{egon}.
+
+
+\subsection{Escalas}
+\cite{fenton} nos diz que nem todos os tipos de medição são iguais em seu mapeamento
+entre o mundo real e o mundo abstrato. Assim, existe o conceito de escala de
+medição que visa abordar essa diferença entre as medições. \cite{fenton} traz principalmente
+5 grandes classificações, quer seriam nominal, ordinal, intervalar, racional e
+absoluta.
+
+A escala nominal atribui um nome ou um rótulo ao atributo, não existindo noção
+de ordem ou magnitude entre elas.
+
+A escala ordinal se assemelha a anterior mas nesta existe a noção de ordem. Caso
+seja utilizado números eles servem apenas para propósitos de classificação, não
+sendo possível realizar operações matemáticas entre eles.
+
+A escala intervalar preserva a noção de ordem dos resultados e ainda traz noções
+de intervalo que separam seus pontos. É possível realizar adição e subtração, mas
+não multiplicação e divisão.
+
+A escala racional possui a noção de ordem e intervalos e ainda incorpora a noção
+de razão. Também está presente o zero absoluta, que significa a ausência do atributo.
+Todas as operações aritméticas podem ser utilizadas para essa escala.
+
+A escala absoluta é um tipo especial da escala racional, onde são admitidos apenas
+multiplicadores unitários, gerando assim números absolutos. Deve ser obtido
+através da contagem.
+
+
+\subsection{Conceito de medição: o paradigma GQM}
+O GQM representa uma abordagem sistemática para confeccionar e integrar metas a
+modelos de processos de software e produtos, baseada em necessidades específicas
+do projeto e da organização \cite{basiliRombach}. O resultado da aplicação do
+método GQM é a especificação de um programa de medição que mira um conjunto de
+pontos e um conjunto de regras para a interpretação de dados de medição.
+
+O princípio por trás do método GQM é que a medição deveria ser orientada a metdas.
+Assim, para melhorar um processo, organizações devem definir suas metas de medição
+baseadas em objetivos corporativos e transformá-los em atividades que podem ser
+ medidas durante a execução do projeto \cite{egon}.
+
+O GQM define uma certa meta, sintetiza essa meta em questões, e define métricas
+que devem prover informações para responder essas questões. Ao responder essas
+questões, os dados medidos definem as metas operacionalmente, e podem, então,
+ser analisados se as metas foram cumpridas. Assim, o GQM define métricas por uma
+perspectiva top-down e analisa e interpreta os dados de medição de uma maneira
+bottom-up.
+
+O modelo GQM começa de uma maneira top-down com a definição de uma meta de medição
+explícita. Essa meta é sintetizada em várias questões que quebram o problema em
+componentes maiores. Cada questão é, então, refinada em métricas que deviam prover
+informações para responder aquelas várias questões. A medição de dados, por outro
+lado, é interpretada de maneira bottom-up. Como as métricas foram definidas com
+uma meta explícita em mente, a informação provida pelas métricas devem ser
+interpretadas e analisadas em respeito a essa meta, para concluir se ela foi
+ou não cumprida \cite{egon}.
