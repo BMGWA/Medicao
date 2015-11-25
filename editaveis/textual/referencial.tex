@@ -15,12 +15,12 @@ a evolução do projeto.
 Técnico, sendo eles:
 
 \begin{itemize}
-  \item Reason, motivo pelo qual o débito foi adquirido;
-  \item Benefíts, o lucro ou ponto positivo que a escolha de optar pelo débito traz;
-  \item Result, o que esse débito realmente possibilitou para a organização;
-  \item Principal, representa o preço que o pagamento do débito possui no momento;
-  \item Interest, preço de pagamento do débito depois de um dado tempo;
-  \item Returns, quanto a organização lucrou com a decisão de ter optado pelo Débito Técnico.
+  \item \textit{Reason}, motivo pelo qual o débito foi adquirido;
+  \item \textit{Benefits}, o lucro ou ponto positivo que a escolha de optar pelo débito traz;
+  \item \textit{Result}, o que esse débito realmente possibilitou para a organização;
+  \item \textit{Principal}, representa o preço que o pagamento do débito possui no momento;
+  \item \textit{Interest}, preço de pagamento do débito depois de um dado tempo;
+  \item \textit{Returns}, quanto a organização lucrou com a decisão de ter optado pelo Débito Técnico.
 \end{itemize}
 
 
@@ -51,10 +51,10 @@ Técnico existente em um projeto.
 
 
 \subsection{Método SQALE para avaliação de Débito Técnico}
-\cite{letouzey} propõe a utilização do método SQALE (Software Quality Assessment
-based on Lifecycle Expectations) para análise do débito técnico. O método de
-Letouzey propõe um Modelo de Qualidade (SQALE Quality Model) e um Modelo de
-Análise (SQALE Analysis Model) para verificação das violações de código.
+\cite{letouzey} propõe a utilização do método SQALE (\textit{Software Quality Assessment
+based on Lifecycle Expectations}) para análise do débito técnico. O método de
+Letouzey propõe um Modelo de Qualidade (\textit{SQALE Quality Model}) e um Modelo de
+Análise (\textit{SQALE Analysis Model}) para verificação das violações de código.
 
 O Modelo de Qualidade do SQALE constitui de uma matriz hierárquica de 3 níveis:
 Características, Sub-Caracteristicas e Requisitos. Numa estratégia de análise de
@@ -105,21 +105,21 @@ organização. A formula é:
 \end{figure}
 Onde:
 
-Débito Técnico-Principal: É o valor atual de Débito Técnico no software;
+Débito Técnico-Principal: É o valor atual de Débito Técnico no \textit{software};
 
-X-Severity-Violations: O somatório total de números de ocorrências de violações
+\textit{X-Severity-Violations}: O somatório total de números de ocorrências de violações
 de uma severidade X;
 
-Percentage to be fixed: O percentual que a organização estipulou que irá corrigir
+\textit{Percentage to be fixed}: O percentual que a organização estipulou que irá corrigir
 de violações daquele nível de severidade;
 
-Average hours needed to fix: Média do tempo necessário para corrigir uma violação
+\textit{Average hours needed to fix}: Média do tempo necessário para corrigir uma violação
 daquele nível de severidade;
 
-\$ per hour: Custo/hora de quem irá corrigir as violações.
+\$ \textit{per hour}: Custo/hora de quem irá corrigir as violações.
 
 Segundo os autores, com a fórmula é possível obter o custo para corrigir o débito
-técnico de um software, de acordo com os parâmetros da organização.
+técnico de um \textit{software}, de acordo com os parâmetros da organização.
 
 \section{Contratação na Administração Pública Federal Brasileira}
 
@@ -137,14 +137,14 @@ a administração destes.
 Em geral, medição é o processo no qual números ou símbolos são atribuídos a
 atributos ou entidades do mundo real de forma a descrevê-los de acordo com regras
 bem definidas \cite{fentonpfleeger}. O resultado númerico é chamado 'medição'.
-Isto pode ser aplicado ao desenvolvimento de software e ao produto de software.
+Isto pode ser aplicado ao desenvolvimento de \textit{software} e ao produto de \textit{software}.
 
-Medição de software é um processo contínuo de definição, coleta e análise de
-dados em cima do desenvolvimento de software e seus produtos com o objetivo de
+Medição de \textit{software} é um processo contínuo de definição, coleta e análise de
+dados em cima do desenvolvimento de \textit{software} e seus produtos com o objetivo de
 entender e controlar o processo \cite{egon}.
 
 
-Em seu livro Software Metrics - A Rigorous and Practical Approach, Fenton define
+Em seu livro \textit{Software Metrics - A Rigorous and Practical Approach}, Fenton define
 medição como o processo de atribuição de números ou símbolos que são atribuídos
 a atributos de entidades do mundo real, para descrever elas de acordo com regras
 definidas. Ele ainda nos diz que uma entidade pode ser tanto um objeto, quanto
@@ -156,19 +156,19 @@ A medição é direta, como medir o peso de alguém. Já a calculação é indir
 são realizada medições e a combinação delas refletem o atributo que estamos
 tentando entender.
 
-A medição se faz necessária em um projeto de software pois ela nos auxilia a
+A medição se faz necessária em um projeto de \textit{software} pois ela nos auxilia a
 entender o que está acontecendo, o que nos permite um controle maior sobre o
 projeto o que serve de base para melhorar o mesmo.
 
-\subsection{Objetivos da medição de software}
+\subsection{Objetivos da medição de \textit{software}}
 Medição é uma ferramenta poderosa para entender os efeitos das ações que são
-tomadas para melhorar o processo de desenvolvimento de software
+tomadas para melhorar o processo de desenvolvimento de \textit{software}
 \cite{egon}.
 
-Dados de medição de software são interpretados para prover informações que podem
+Dados de medição de \textit{software} são interpretados para prover informações que podem
 ser aplicadas para três diferentes propósitos. Em primeiro lugar, os dados
 fornecem visibilidade do processo de desenvolvimento atual e as características
-dos produtos de software. Essa visibilidade é requerida para reduzir a complexidade
+dos produtos de \textit{software}. Essa visibilidade é requerida para reduzir a complexidade
 e aumentar o entendimento do processo e dos produtos. Entedimento significa
 determinar as diferentes variáveis que existem durante a execução de um processo.
 Uma vez que um entedimento básico é estabelecido, os dados coletados e analisados
@@ -180,10 +180,10 @@ relações entre os variáveis de processos têm de ser determinadas. Uma vez qu
  do processo de desenvolvimento, do qual ações de melhoria podem ser tomadas
  \cite{pfleeger}.
 
-\subsection{Conceitos de medição de software orientada a meta}
-Medição de software só deve ser realizada diante de propósitos bem definidos.
-A medição de software orientada a meta é especialmente usada para programas de
- melhoria. O método aplicado nesse trabalho é o método GQM (Goal, Question, Metric)
+\subsection{Conceitos de medição de \textit{software} orientada a meta}
+Medição de \textit{software} só deve ser realizada diante de propósitos bem definidos.
+A medição de \textit{software} orientada a meta é especialmente usada para programas de
+ melhoria. O método aplicado nesse trabalho é o método GQM (\textit{Goal, Question, Metric})
  concebido por \cite{basiliRombach}.
 
  O método GQM contém quatro fases:
@@ -230,7 +230,7 @@ de intervalo que separam seus pontos. É possível realizar adição e subtraç�
 não multiplicação e divisão.
 
 A escala racional possui a noção de ordem e intervalos e ainda incorpora a noção
-de razão. Também está presente o zero absoluta, que significa a ausência do atributo.
+de razão. Também está presente o zero absoluto, que significa a ausência do atributo.
 Todas as operações aritméticas podem ser utilizadas para essa escala.
 
 A escala absoluta é um tipo especial da escala racional, onde são admitidos apenas
@@ -240,12 +240,12 @@ através da contagem.
 
 \subsection{Conceito de medição: o paradigma GQM}
 O GQM representa uma abordagem sistemática para confeccionar e integrar metas a
-modelos de processos de software e produtos, baseada em necessidades específicas
+modelos de processos de \textit{software} e produtos, baseada em necessidades específicas
 do projeto e da organização \cite{basiliRombach}. O resultado da aplicação do
 método GQM é a especificação de um programa de medição que mira um conjunto de
 pontos e um conjunto de regras para a interpretação de dados de medição.
 
-O princípio por trás do método GQM é que a medição deveria ser orientada a metdas.
+O princípio por trás do método GQM é que a medição deveria ser orientada a metas.
 Assim, para melhorar um processo, organizações devem definir suas metas de medição
 baseadas em objetivos corporativos e transformá-los em atividades que podem ser
  medidas durante a execução do projeto \cite{egon}.
@@ -254,14 +254,14 @@ O GQM define uma certa meta, sintetiza essa meta em questões, e define métrica
 que devem prover informações para responder essas questões. Ao responder essas
 questões, os dados medidos definem as metas operacionalmente, e podem, então,
 ser analisados se as metas foram cumpridas. Assim, o GQM define métricas por uma
-perspectiva top-down e analisa e interpreta os dados de medição de uma maneira
-bottom-up.
+perspectiva \textit{top-down} e analisa e interpreta os dados de medição de uma maneira
+\textit{bottom-up}.
 
-O modelo GQM começa de uma maneira top-down com a definição de uma meta de medição
+O modelo GQM começa de uma maneira \textit{top-down} com a definição de uma meta de medição
 explícita. Essa meta é sintetizada em várias questões que quebram o problema em
 componentes maiores. Cada questão é, então, refinada em métricas que deviam prover
 informações para responder aquelas várias questões. A medição de dados, por outro
-lado, é interpretada de maneira bottom-up. Como as métricas foram definidas com
+lado, é interpretada de maneira \textit{bottom-up}. Como as métricas foram definidas com
 uma meta explícita em mente, a informação provida pelas métricas devem ser
 interpretadas e analisadas em respeito a essa meta, para concluir se ela foi
 ou não cumprida \cite{egon}.
