@@ -1,17 +1,17 @@
 \chapter[Referencial Teórico]{Referencial Teórico}
 
 Esta sessão trará todo referêncial teórico necessário para desenvolver o projeto
-de medição de débito técnico, comtemplando tópicos explicativos sobre Débito Técnico,
+de medição de débito técnico, contemplando tópicos explicativos sobre Débito Técnico,
 Contratação e Medição e Análise.
 
 \section{Débito Técnico}
-Débito técnico é uma metáfora proposta por \cite{cunningham} onde, uma dívida é
+Débito técnico é uma metáfora proposta por \cite{cunningham} onde uma dívida é
 criada quando a qualidade do código é deixada de lado para acelerar o processo
 de desenvolvimento, até o momento que esta dívida é quitada. O preço do pagamento
-da dívida, geralmente feita através de refatoração,  aumenta gradualmente com
+da dívida, geralmente feita através de refatoração, aumenta gradualmente com
 a evolução do projeto.
 
-\cite{oliveira} afirma que se pode identificar vários atributos em um Débito
+\cite{oliveira} afirma que é possível identificar vários atributos em um Débito
 Técnico, sendo eles:
 
 \begin{itemize}
@@ -25,9 +25,9 @@ Técnico, sendo eles:
 
 
 De acordo com \cite{mapping}, há um debate sobre a importância de gerenciar o
-Débito Técnico, pois este é muito importante para a equipe de negócios,
-complementando que nem sempre este é ruim, e que podem trazer benefícios
-que são maiores do que a perca monetária causada pelo juros.
+Débito Técnico, dada a importância deste para a equipe de negócios,
+complementando que nem sempre este é ruim e que pode-se obter benefícios
+que são maiores do que a perda monetária causada pelo juros.
 
 \cite{mapping} identificam que o Débito Técnico tem atividades que podem ser classificadas.
 Ela lista oito tipos de Débito Técnico, sendo eles:
@@ -44,7 +44,7 @@ Ela lista oito tipos de Débito Técnico, sendo eles:
 \end{itemize}
 
 Quando se trata de Débito Técnico, existem modelos de identificação e medição de
-código. O autor \cite{eisenberg}, executa uma análise estática e utiliza o
+código. O autor \cite{eisenberg} executa uma análise estática e utiliza o
 resultado para estimar o quanto custará para sanar todo ou parte do Débito
 Técnico existente em um projeto.
 
@@ -64,21 +64,21 @@ não-ambíguos, não-redundantes, justificáveis, aceitáveis, implementáveis e
 verificáveis.
 
 Assim, basta utilizar uma ferramenta que consiga avaliar o código com relação
-aos Requisitos estabelecidos e será possível identificar o débito técnico na
+aos requisitos estabelecidos e será possível identificar o débito técnico na
 aplicação.
 
 O Modelo de Análise faz uso de um índice de remediação para avaliar os
 impactos das violações identificadas. Esse índice de remediação faz uma relação
 entre os Requisitos do Modelo de Qualidade, com uma remediação associada a
-cada violação desses requisitos. Por fim, é estipulado também uma função de
+cada violação desses requisitos. Por fim, é estipulada, também, uma função de
 remediação, que associa um tempo para aplicar aquela remediação.
 
 \subsection{Identificação de Débito Técnico}
-Para mensurar o Débito Técnico existente em uma aplicação é necessário que haja
-meios de identificá-lo. Existem vários métodos de identificação de Débito Técnico,
+Para mensurar o débito técnico existente em uma aplicação é necessário que haja
+meios de identificá-lo. Existem vários métodos de identificação de débito técnico,
 sendo um deles o proposto por \cite{siebra}, afirmando que os resultados obtidos a
 partir da medição de um conjunto de dez métricas podem identificar o quanto de
-Débito Técnico uma aplicação possui. Essas métricas podem ser:
+débito técnico uma aplicação possui. Essas métricas podem ser:
 
 \begin{enumerate}
   \item Acoplamentos Aferentes;
@@ -118,7 +118,7 @@ daquele nível de severidade;
 
 \$ \textit{per hour}: Custo/hora de quem irá corrigir as violações.
 
-Segundo os autores, com a fórmula é possível obter o custo para corrigir o débito
+Segundo os autores, com a fórmula, é possível obter o custo para corrigir o débito
 técnico de um \textit{software}, de acordo com os parâmetros da organização.
 
 Vale ressaltar que as definições dos níveis de severidade das violações (e seus respectivos pesos) são feitas pela organização que está a utilizar o método proposto.
@@ -126,13 +126,13 @@ Na figura apresentada acima, os termos \textit{high-severity violations}, \texti
 
 \section{Contratação na Administração Pública Federal Brasileira}
 
-No Decreto-Lei nº 200, \cite{decreto200} por institui princípios fundamentais para a
+No Decreto-Lei nº 200, \cite{decreto200} institui princípios fundamentais para a
 Administração Pública, sendo um deles a contratação de terceiros, que deve ser
 executada sempre que houver possibilidade.
 
 O decreto nº 2.271, por \cite{decreto2271}, aconselha que todos os produtos e seviços
 que não tenham ligação direta para a utilização na organização, incluindo serviços
-de informática, sejam terceirizados. A fim de destituir a responsabilidade do
+de informática, sejam terceirizados; a fim de destituir a responsabilidade do
 órgão para com o desenvolvimento de vários serviços, privando-o unicamente com
 a administração destes.
 
@@ -154,14 +154,14 @@ definidas. Ele ainda nos diz que uma entidade pode ser tanto um objeto, quanto
 um evento do mundo real, e um atributo é uma característica ou propriedade dessa
 entidade que nos interessa.
 
-Ele ainda define que existe dois tipos de quantificação: Medição e Calculação.
+Ele ainda define que existem dois tipos de quantificação: Medição e Calculação.
 A medição é direta, como medir o peso de alguém. Já a calculação é indireta, onde
-são realizada medições e a combinação delas refletem o atributo que estamos
+são realizadas medições e a combinação delas refletem o atributo que estamos
 tentando entender.
 
 A medição se faz necessária em um projeto de \textit{software} pois ela nos auxilia a
-entender o que está acontecendo, o que nos permite um controle maior sobre o
-projeto o que serve de base para melhorar o mesmo.
+entender o que está acontecendo, o que nos permite ter um controle maior sobre o
+projeto e melhorar o mesmo.
 
 \subsection{Objetivos da medição de \textit{software}}
 Medição é uma ferramenta poderosa para entender os efeitos das ações que são
